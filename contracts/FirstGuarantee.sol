@@ -1,9 +1,10 @@
 pragma solidity ^0.4.24;
 
 import "./BaseGuaranteeData.sol";
+import "./RoleUtils.sol";
 
 
-contract FirstGuarantee is BaseGuaranteeData {
+contract FirstGuarantee is BaseGuaranteeData, RoleUtils {
 
     event FirstGuaranteeCreated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
     event FirstGuarantePopulated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
@@ -13,7 +14,7 @@ contract FirstGuarantee is BaseGuaranteeData {
     }
 
 
-    constructor () public{
+    constructor () public {
 
         emit FirstGuaranteeCreated("The FirstGuarantee created!!!", this, msg.sender, now);
     }

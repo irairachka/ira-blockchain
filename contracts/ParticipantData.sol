@@ -5,16 +5,15 @@ contract ParticipantData {
 
     bytes32 public name;
     bytes32 public localAddress;
-    bool public isActive;
+    bool public isActive = false;
 
-    constructor (bytes32 _name, bytes32 _localAddress) internal {
+    function populateData (bytes32 _name, bytes32 _localAddress) public {
         name = _name;
         localAddress = _localAddress;
-        isActive = false;
     }
 
 
-    function getData() public view returns(string _name, string _localAddress, bool _isActive){
+    function getData() public view returns(bytes32 _name, bytes32 _localAddress, bool _isActive){
         _name = name;
         _localAddress = localAddress;
         _isActive = isActive;
