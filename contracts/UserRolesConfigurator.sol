@@ -4,49 +4,45 @@ import "./Ownable.sol";
 
 contract UserRolesConfigurator  is Ownable{
 
-    private address generalAdmin;
+    address private generalAdmin;
 
     struct User {
         address theAddress;
-        string name;
+        bytes32 name;
         bool isActive;
     }
 
     constructor () public {
         generalAdmin = msg.sender;
-        NewEnvironmentMakerCreated(admin.this, _name, msg.sender, _addr ,_name, block.timestamp);
+        emit GeneralAdminCreated(msg.sender, block.timestamp);
     }
 
-    function isAdmin(address _theAddress) return bool public {
-        if (msg.sender == generalAdmin){
-            return true;
+    function isAdmin(address _theAddress) public view returns(bool _isAdmin){
+        if (_theAddress == generalAdmin){
+            _isAdmin = true;
         }
 
-        return false;
+        _isAdmin = false;
     }
 
     mapping (address=>User) public environmentMakerGroupUsers;
     address[] usersByAddress; // this is like a whitepages of all users, by ethereum address
 
-    event GeneralAdminCreated(address theAddress, bytes32 name, address theSenderAddress, uint timestamp);
+    event GeneralAdminCreated(address theSenderAddress, uint timestamp);
     event NewEnvironmentMakerCreated(address theAddress, bytes32 name, address theSenderAddress, uint timestamp);
 
 
-    function UserRolesConfigurator(address adminAddr , string adminName) {
-        addOrUpdateAdmin(adminAddr, adminName);
-    }
-
-    function addNewEnvironmentMaker(address _userAddress , string _userName) onlyOwner public {
+    function addNewEnvironmentMaker(address _userAddress , bytes32 _userName) onlyOwner public {
 
         // the user is not exist yet and the name not empty
-        if(bytes(adminGroupUsers[_userAddress].name).length == 0 && bytes(_userName).length != 0){
+        if(bytes32(environmentMakerGroupUsers[_userAddress].name).length == 0 && bytes32(_userName).length != 0){
 
             environmentMakerGroupUsers[_userAddress].theAddress = _userAddress;
             environmentMakerGroupUsers[_userAddress].name = _userName;
             environmentMakerGroupUsers[_userAddress].isActive = true;
 
-            usersByAddress.push(_addr);
-            NewEnvironmentMakerCreated(admin.this, _name, msg.sender, _addr ,_name, block.timestamp);
+            usersByAddress.push(_userAddress);
+            emit NewEnvironmentMakerCreated(_userAddress, _userName, msg.sender, block.timestamp);
         }
     }
 

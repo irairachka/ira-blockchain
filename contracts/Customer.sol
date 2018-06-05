@@ -5,7 +5,7 @@ import "./ParticipantData.sol";
 
 contract Customer is ParticipantData {
 
-    function isCustomer() constant public returns (bool _isCustomer){
+    function isCustomer() pure public returns (bool _isCustomer){
         return true;
     }
 

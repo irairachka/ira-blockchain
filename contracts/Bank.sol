@@ -7,15 +7,15 @@ contract Bank is ParticipantData, RoleUtils{
 
     address bankAccount;
 
-    event NewBankCreated(bytes32 name, address theContractAddress, address theSenderAddress, uint timestamp);
+    event NewBankCreated(address theContractAddress, address theSenderAddress, uint timestamp);
     event BankDataPopulated(bytes32 name, address theContractAddress, address theSenderAddress, uint timestamp);
 
-    constructor() public onlyAdmin{
-        emit NewBankCreated(this.name, this, msg.sender, now);
+    constructor() public {
+        emit NewBankCreated(this, msg.sender, now);
     }
 
-    function isBank() constant public returns (bool _isBank){
-        return true;
+    function isBank() pure public returns (bool _isBank){
+        _isBank = true;
     }
 
 
@@ -25,7 +25,7 @@ contract Bank is ParticipantData, RoleUtils{
         localAddress = _localAddress;
         isActive = true;
 
-        emit BankDataPopulated(this.name, this, msg.sender, now);
+        emit BankDataPopulated(_name, this, msg.sender, now);
     }
 
 

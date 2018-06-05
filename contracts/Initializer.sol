@@ -3,7 +3,7 @@ pragma solidity ^0.4.0;
 
 contract Initializer {
 
-    event BankListInitialized (address indexed previousOwner);
+    event BankListInitialized ();
     event CustomerListInitialized (address indexed previousOwner);
     event MunicipalityListInitialized (address indexed previousOwner);
 

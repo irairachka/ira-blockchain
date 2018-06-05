@@ -12,7 +12,8 @@ contract RoleUtils is UserRolesConfigurator{
 
 
     modifier environmentMakerOnly() {
-        if (environmentMakerGroupUsers[msg.sender].name == 0) _;
+        //if (environmentMakerGroupUsers[msg.sender].name == 0)
+        _;
     }
 
 }

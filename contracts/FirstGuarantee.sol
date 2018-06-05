@@ -7,7 +7,7 @@ import "./RoleUtils.sol";
 contract FirstGuarantee is BaseGuaranteeData, RoleUtils {
 
     event FirstGuaranteeCreated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
-    event FirstGuarantePopulated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
+    event FirstGuaranteePopulated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
 
     function getId() public constant returns (address _contract_id){
         return this;
@@ -21,7 +21,9 @@ contract FirstGuarantee is BaseGuaranteeData, RoleUtils {
 
 
     function populateBaseGuaranteeData(Municipality _municipality, Bank _bank, Customer _customer, bytes _guaranteeDocumentHash) public {
-        emit FirstGuarantePopulated("FirstGuaranty data populated", this, msg.sender, now);
+        BaseGuaranteeData.populateBaseGuaranteeData(_municipality, _bank, _customer, _guaranteeDocumentHash);
+
+        emit FirstGuaranteePopulated("FirstGuaranty data populated", this, msg.sender, now);
     }
 
 }
