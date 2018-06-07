@@ -1,10 +1,10 @@
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.24;
 
 import "./Ownable.sol";
 
 contract UserRolesConfigurator  is Ownable{
 
-    address private generalAdmin;
+    address internal generalAdmin;
 
     struct User {
         address theAddress;
@@ -17,13 +17,6 @@ contract UserRolesConfigurator  is Ownable{
         emit GeneralAdminCreated(msg.sender, block.timestamp);
     }
 
-    function isAdmin(address _theAddress) public view returns(bool _isAdmin){
-        if (_theAddress == generalAdmin){
-            _isAdmin = true;
-        }
-
-        _isAdmin = false;
-    }
 
     mapping (address=>User) public environmentMakerGroupUsers;
     address[] usersByAddress; // this is like a whitepages of all users, by ethereum address

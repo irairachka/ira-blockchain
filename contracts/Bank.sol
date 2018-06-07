@@ -1,9 +1,8 @@
 pragma solidity ^0.4.24;
 
 import "./ParticipantData.sol";
-import "./RoleUtils.sol";
 
-contract Bank is ParticipantData, RoleUtils{
+contract Bank is ParticipantData{
 
     address bankAccount;
 
@@ -19,7 +18,7 @@ contract Bank is ParticipantData, RoleUtils{
     }
 
 
-    function populateData (address _bankAccount, bytes32 _name, bytes32 _localAddress) public onlyAdmin{
+    function populateData (address _bankAccount, bytes32 _name, bytes32 _localAddress) public {
         bankAccount = _bankAccount;
         name = _name;
         localAddress = _localAddress;

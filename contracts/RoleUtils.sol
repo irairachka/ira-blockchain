@@ -5,15 +5,23 @@ import "./UserRolesConfigurator.sol";
 contract RoleUtils is UserRolesConfigurator{
 
 
-    modifier onlyAdmin() {
-        if (isAdmin(msg.sender))
-            _;
+    function isAdmin(address _theAddress) public view returns(bool _isAdmin){
+        if (_theAddress == generalAdmin){
+            _isAdmin = true;
+        }
+
+        _isAdmin = false;
     }
 
 
-    modifier environmentMakerOnly() {
-        //if (environmentMakerGroupUsers[msg.sender].name == 0)
-        _;
+    function isEnvironmentMaker(address _theAddress) public view returns(bool _isEnvironmentMaker){
+
+        if (bytes32(environmentMakerGroupUsers[_theAddress].name).length == 0){
+            _isEnvironmentMaker = false;
+        }
+
+        _isEnvironmentMaker = true;
     }
+
 
 }

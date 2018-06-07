@@ -3,12 +3,13 @@ var request = require('request');
 
 module.exports = {
     networks: {
-        development: {
+        develop: {
             host: "127.0.0.1",
-            port: 8545,
+            port: 9545,
             network_id: "*", // Match any network id
-            gas: 57000000,
+            gas: 6721975,
             gasPrice: 0
+            //from: "0x627306090abab3a6e1400e9345bc60c78a8bef57"
         },
         live: {
             host: "127.0.0.1", // Random IP for example purposes (do not use)

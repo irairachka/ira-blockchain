@@ -1,11 +1,11 @@
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.24;
 
 
 contract Initializer {
 
-    event BankListInitialized ();
-    event CustomerListInitialized (address indexed previousOwner);
-    event MunicipalityListInitialized (address indexed previousOwner);
+    event BankListInitialized (address[] banks);
+    event CustomerListInitialized (address[] customers);
+    event MunicipalityListInitialized (address [] Municipalities);
 
     constructor() public{
 
