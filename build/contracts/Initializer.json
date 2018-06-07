@@ -1,0 +1,753 @@
+{
+  "contractName": "Initializer",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "banks",
+          "type": "address[]"
+        }
+      ],
+      "name": "BankListInitialized",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "customers",
+          "type": "address[]"
+        }
+      ],
+      "name": "CustomerListInitialized",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "Municipalities",
+          "type": "address[]"
+        }
+      ],
+      "name": "MunicipalityListInitialized",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "createInitialBankList",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "createInitialCustomerList",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "createInitialMunicipalityList",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060c68061001f6000396000f3006080604052600436106053576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063162cf8ae1460585780633b2cd59014606c578063fd9dd3d5146080575b600080fd5b348015606357600080fd5b50606a6094565b005b348015607757600080fd5b50607e6096565b005b348015608b57600080fd5b5060926098565b005b565b565b5600a165627a7a72305820a82eb50b15d63ea43419c02e566d126393675a09d3333d140671d1bf36ca57890029",
+  "deployedBytecode": "0x6080604052600436106053576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063162cf8ae1460585780633b2cd59014606c578063fd9dd3d5146080575b600080fd5b348015606357600080fd5b50606a6094565b005b348015607757600080fd5b50607e6096565b005b348015608b57600080fd5b5060926098565b005b565b565b5600a165627a7a72305820a82eb50b15d63ea43419c02e566d126393675a09d3333d140671d1bf36ca57890029",
+  "sourceMap": "27:411:4:-;;;229:28;8:9:-1;5:2;;;30:1;27;20:12;5:2;229:28:4;27:411;;;;;;",
+  "deployedSourceMap": "27:411:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;264:48;;8:9:-1;5:2;;;30:1;27;20:12;5:2;264:48:4;;;;;;378:56;;8:9:-1;5:2;;;30:1;27;20:12;5:2;378:56:4;;;;;;319:52;;8:9:-1;5:2;;;30:1;27;20:12;5:2;319:52:4;;;;;;264:48;:::o;378:56::-;:::o;319:52::-;:::o",
+  "source": "pragma solidity ^0.4.24;\n\n\ncontract Initializer {\n\n    event BankListInitialized (address[] banks);\n    event CustomerListInitialized (address[] customers);\n    event MunicipalityListInitialized (address [] Municipalities);\n\n    constructor() public{\n\n    }\n\n\n    function createInitialBankList() public {\n\n    }\n\n\n    function createInitialCustomerList() public {\n\n    }\n\n\n    function createInitialMunicipalityList() public {\n\n    }\n\n\n}\n",
+  "sourcePath": "/Users/iraeidelman/IdeaProjects/ira-blockchain/contracts/Initializer.sol",
+  "ast": {
+    "absolutePath": "/Users/iraeidelman/IdeaProjects/ira-blockchain/contracts/Initializer.sol",
+    "exportedSymbols": {
+      "Initializer": [
+        346
+      ]
+    },
+    "id": 347,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 314,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 346,
+        "linearizedBaseContracts": [
+          346
+        ],
+        "name": "Initializer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 319,
+            "name": "BankListInitialized",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 318,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 317,
+                  "indexed": false,
+                  "name": "banks",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 319,
+                  "src": "82:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 315,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "82:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 316,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "82:9:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "81:17:4"
+            },
+            "src": "55:44:4"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 324,
+            "name": "CustomerListInitialized",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 323,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 322,
+                  "indexed": false,
+                  "name": "customers",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 324,
+                  "src": "135:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 320,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "135:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 321,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "135:9:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "134:21:4"
+            },
+            "src": "104:52:4"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 329,
+            "name": "MunicipalityListInitialized",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 328,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 327,
+                  "indexed": false,
+                  "name": "Municipalities",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 329,
+                  "src": "196:25:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 325,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "196:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 326,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "196:10:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "195:27:4"
+            },
+            "src": "161:62:4"
+          },
+          {
+            "body": {
+              "id": 332,
+              "nodeType": "Block",
+              "src": "249:8:4",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 333,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 330,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "240:2:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 331,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "249:0:4"
+            },
+            "scope": 346,
+            "src": "229:28:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 336,
+              "nodeType": "Block",
+              "src": "304:8:4",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 337,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createInitialBankList",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 334,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "294:2:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 335,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "304:0:4"
+            },
+            "scope": 346,
+            "src": "264:48:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 340,
+              "nodeType": "Block",
+              "src": "363:8:4",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 341,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createInitialCustomerList",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 338,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "353:2:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 339,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "363:0:4"
+            },
+            "scope": 346,
+            "src": "319:52:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 344,
+              "nodeType": "Block",
+              "src": "426:8:4",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 345,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createInitialMunicipalityList",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 342,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "416:2:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 343,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "426:0:4"
+            },
+            "scope": 346,
+            "src": "378:56:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 347,
+        "src": "27:411:4"
+      }
+    ],
+    "src": "0:439:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/iraeidelman/IdeaProjects/ira-blockchain/contracts/Initializer.sol",
+    "exportedSymbols": {
+      "Initializer": [
+        346
+      ]
+    },
+    "id": 347,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 314,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 346,
+        "linearizedBaseContracts": [
+          346
+        ],
+        "name": "Initializer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 319,
+            "name": "BankListInitialized",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 318,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 317,
+                  "indexed": false,
+                  "name": "banks",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 319,
+                  "src": "82:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 315,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "82:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 316,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "82:9:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "81:17:4"
+            },
+            "src": "55:44:4"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 324,
+            "name": "CustomerListInitialized",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 323,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 322,
+                  "indexed": false,
+                  "name": "customers",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 324,
+                  "src": "135:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 320,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "135:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 321,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "135:9:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "134:21:4"
+            },
+            "src": "104:52:4"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 329,
+            "name": "MunicipalityListInitialized",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 328,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 327,
+                  "indexed": false,
+                  "name": "Municipalities",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 329,
+                  "src": "196:25:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 325,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "196:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 326,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "196:10:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "195:27:4"
+            },
+            "src": "161:62:4"
+          },
+          {
+            "body": {
+              "id": 332,
+              "nodeType": "Block",
+              "src": "249:8:4",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 333,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 330,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "240:2:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 331,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "249:0:4"
+            },
+            "scope": 346,
+            "src": "229:28:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 336,
+              "nodeType": "Block",
+              "src": "304:8:4",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 337,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createInitialBankList",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 334,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "294:2:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 335,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "304:0:4"
+            },
+            "scope": 346,
+            "src": "264:48:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 340,
+              "nodeType": "Block",
+              "src": "363:8:4",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 341,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createInitialCustomerList",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 338,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "353:2:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 339,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "363:0:4"
+            },
+            "scope": 346,
+            "src": "319:52:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 344,
+              "nodeType": "Block",
+              "src": "426:8:4",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 345,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "createInitialMunicipalityList",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 342,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "416:2:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 343,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "426:0:4"
+            },
+            "scope": 346,
+            "src": "378:56:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 347,
+        "src": "27:411:4"
+      }
+    ],
+    "src": "0:439:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-06-07T08:57:05.664Z"
+}
