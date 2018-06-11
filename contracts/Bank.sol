@@ -14,7 +14,7 @@ contract Bank is ParticipantData{
     }
 
     function isBank() pure public returns (bool){
-        _isBank = true;
+        return true;
     }
 
 

@@ -30,12 +30,14 @@ contract Initializer {
 
     function createInitialCustomerList() public {
         Customer customer = new Customer();
-        customer.po
+        customer.populateCustomerData(0xc5fdf4076b8f3a5357c5e395ab970b5b54098fef, "Customer Ira Eidelman", "Ha Ganim, Kyriat Ono");
 
     }
 
 
     function createInitialMunicipalityList() public {
+        Municipality municipality = new Municipality();
+        municipality.populateMunicipalityData(0x821aea9a577a9b44299b9c15c88cf3087f3b5544, "Customer Ira Eidelman", "Ha Ganim, Kyriat Ono");
 
     }
 

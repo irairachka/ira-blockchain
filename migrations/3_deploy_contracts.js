@@ -9,7 +9,7 @@ module.exports = function(deployer, network, accounts) {
             return deployer.deploy(FirstGarantee,  {gas:6721975});
 
         }).catch(function(error) {
-            console.error("+++++++++++++++++++++++++++++ Error detected during DEPLOYMENT: " + error);
+            console.error("+++++++++++++++++++++++++++++ Error detected during FirstGarantee DEPLOYMENT: " + error);
         });
 
 };
