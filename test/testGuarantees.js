@@ -30,6 +30,8 @@ for(i=0; i<accounts.length; i++)
 {
     console.log("    account " + i + ": " + accounts[i]);
 }
+
+console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 var blockNum = web3.eth.blockNumber;
 console.log("+++++++++++++++++++ CURRENT_BLOCK_NUMBER : " + blockNum);
 var currentBlockInfo = web3.eth.getBlock(blockNum);
@@ -89,7 +91,7 @@ contract("FirstGuarantee", function(accounts) {
 
             return getGuaranteeHistoryEvents(globalFirstGuarantee);
         }).then(function (replay) {
-
+            logBlockchainStatusAfterGaranteeCreation();
 
         }).catch(function(error) {
             console.error(error);
@@ -156,4 +158,25 @@ contract("FirstGuarantee", function(accounts) {
     };
 
 
+    logBlockchainStatusAfterGaranteeCreation=()=> {
+
+        console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        var blockNum = web3.eth.blockNumber;
+        console.log("+++++++++++++++++++ CURRENT_BLOCK_NUMBER : " + blockNum);
+        var currentBlockInfo = web3.eth.getBlock(blockNum);
+        console.log("+++++++++++++++++++ CURRENT_BLOCK_INFO : ")
+        console.log("           number: " + currentBlockInfo.number);
+        console.log("           hash: " + currentBlockInfo.hash);
+        console.log("           parentHash: " + currentBlockInfo.parentHash);
+        console.log("           size: " + currentBlockInfo.size);
+        console.log("           gasLimit: " + currentBlockInfo.gasLimit);
+        console.log("           gasUsed: " + currentBlockInfo.gasUsed);
+
+        versionVal = web3.eth.getBlockTransactionCount(blockNum);
+        console.log("+++++++++++++++++++ CURRENT_BLOCK_TR_NUMBER : " + versionVal);
+        console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+    }
+
 });
+
+

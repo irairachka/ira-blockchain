@@ -12,18 +12,19 @@ contract UserRolesConfigurator  is Ownable{
         bool isActive;
     }
 
+    event GeneralAdminCreated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
+
     constructor () public {
-        generalAdmin = msg.sender;
-        emit GeneralAdminCreated(msg.sender, block.timestamp);
+        generalAdmin = 0xc5fdf4076b8f3a5357c5e395ab970b5b54098fef;
+        emit GeneralAdminCreated("General Admin is created", this, msg.sender, now);
     }
 
 
     mapping (address=>User) public environmentMakerGroupUsers;
     address[] usersByAddress; // this is like a whitepages of all users, by ethereum address
 
-    event GeneralAdminCreated(address theSenderAddress, uint timestamp);
-    event NewEnvironmentMakerCreated(address theAddress, bytes32 name, address theSenderAddress, uint timestamp);
 
+    event NewEnvironmentMakerCreated(string theMessage, bytes32 userName, address theUserAddress, address theSenderAddress, uint timestamp);
 
     function addNewEnvironmentMaker(address _userAddress , bytes32 _userName) onlyOwner public {
 
@@ -35,7 +36,7 @@ contract UserRolesConfigurator  is Ownable{
             environmentMakerGroupUsers[_userAddress].isActive = true;
 
             usersByAddress.push(_userAddress);
-            emit NewEnvironmentMakerCreated(_userAddress, _userName, msg.sender, block.timestamp);
+            emit NewEnvironmentMakerCreated("New EnvironmentMaker is created", _userName, _userAddress, msg.sender, now);
         }
     }
 

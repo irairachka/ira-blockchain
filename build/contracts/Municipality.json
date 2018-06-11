@@ -118,22 +118,22 @@
   ],
   "bytecode": "0x60806040526000600260006101000a81548160ff02191690831515021790555034801561002b57600080fd5b506102de8061003b6000396000f30060806040526004361061008e576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde031461009357806308db16cb146100c65780630d55748d146100f95780630f15f4c01461013857806322f3e2d41461014f5780633bc5de301461017e57806351b42b00146101cb57806367bbf31b146101e2575b600080fd5b34801561009f57600080fd5b506100a8610211565b60405180826000191660001916815260200191505060405180910390f35b3480156100d257600080fd5b506100db610217565b60405180826000191660001916815260200191505060405180910390f35b34801561010557600080fd5b506101366004803603810190808035600019169060200190929190803560001916906020019092919050505061021d565b005b34801561014457600080fd5b5061014d610237565b005b34801561015b57600080fd5b50610164610254565b604051808215151515815260200191505060405180910390f35b34801561018a57600080fd5b50610193610267565b604051808460001916600019168152602001836000191660001916815260200182151515158152602001935050505060405180910390f35b3480156101d757600080fd5b506101e061028c565b005b3480156101ee57600080fd5b506101f76102a9565b604051808215151515815260200191505060405180910390f35b60005481565b60015481565b816000816000191690555080600181600019169055505050565b6001600260006101000a81548160ff021916908315150217905550565b600260009054906101000a900460ff1681565b6000806000805492506001549150600260009054906101000a900460ff169050909192565b6000600260006101000a81548160ff021916908315150217905550565b600060019050905600a165627a7a72305820db81b58adc22d410229089c4f28c499e64301be6ca3b24a6837d98cbcd34141c0029",
   "deployedBytecode": "0x60806040526004361061008e576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde031461009357806308db16cb146100c65780630d55748d146100f95780630f15f4c01461013857806322f3e2d41461014f5780633bc5de301461017e57806351b42b00146101cb57806367bbf31b146101e2575b600080fd5b34801561009f57600080fd5b506100a8610211565b60405180826000191660001916815260200191505060405180910390f35b3480156100d257600080fd5b506100db610217565b60405180826000191660001916815260200191505060405180910390f35b34801561010557600080fd5b506101366004803603810190808035600019169060200190929190803560001916906020019092919050505061021d565b005b34801561014457600080fd5b5061014d610237565b005b34801561015b57600080fd5b50610164610254565b604051808215151515815260200191505060405180910390f35b34801561018a57600080fd5b50610193610267565b604051808460001916600019168152602001836000191660001916815260200182151515158152602001935050505060405180910390f35b3480156101d757600080fd5b506101e061028c565b005b3480156101ee57600080fd5b506101f76102a9565b604051808215151515815260200191505060405180910390f35b60005481565b60015481565b816000816000191690555080600181600019169055505050565b6001600260006101000a81548160ff021916908315150217905550565b600260009054906101000a900460ff1681565b6000806000805492506001549150600260009054906101000a900460ff169050909192565b6000600260006101000a81548160ff021916908315150217905550565b600060019050905600a165627a7a72305820db81b58adc22d410229089c4f28c499e64301be6ca3b24a6837d98cbcd34141c0029",
-  "sourceMap": "59:146:6:-;;;140:5:8;117:28;;;;;;;;;;;;;;;;;;;;59:146:6;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:146:6;;;;;;;",
-  "deployedSourceMap": "59:146:6:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:19:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:19:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;84:27;;8:9:-1;5:2;;;30:1;27;20:12;5:2;84:27:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;152:135;;8:9:-1;5:2;;;30:1;27;20:12;5:2;152:135:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;557:59;;8:9:-1;5:2;;;30:1;27;20:12;5:2;557:59:8;;;;;;117:28;;8:9:-1;5:2;;;30:1;27;20:12;5:2;117:28:8;;;;;;;;;;;;;;;;;;;;;;;;;;;294:189;;8:9:-1;5:2;;;30:1;27;20:12;5:2;294:189:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;489:62;;8:9:-1;5:2;;;30:1;27;20:12;5:2;489:62:8;;;;;;106:96:6;;8:9:-1;5:2;;;30:1;27;20:12;5:2;106:96:6;;;;;;;;;;;;;;;;;;;;;;;;;;;59:19:8;;;;:::o;84:27::-;;;;:::o;152:135::-;237:5;230:4;:12;;;;;;;267:13;252:12;:28;;;;;;;152:135;;:::o;557:59::-;605:4;594:8;;:15;;;;;;;;;;;;;;;;;;557:59::o;117:28::-;;;;;;;;;;;;;:::o;294:189::-;333:13;348:21;371:14;404:4;;396:12;;434;;418:28;;468:8;;;;;;;;;;;456:20;;294:189;;;:::o;489:62::-;539:5;528:8;;:16;;;;;;;;;;;;;;;;;;489:62::o;106:96:6:-;153:20;191:4;184:11;;106:96;:::o",
+  "sourceMap": "59:146:5:-;;;140:5:7;117:28;;;;;;;;;;;;;;;;;;;;59:146:5;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:146:5;;;;;;;",
+  "deployedSourceMap": "59:146:5:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:19:7;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:19:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;84:27;;8:9:-1;5:2;;;30:1;27;20:12;5:2;84:27:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;152:135;;8:9:-1;5:2;;;30:1;27;20:12;5:2;152:135:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;557:59;;8:9:-1;5:2;;;30:1;27;20:12;5:2;557:59:7;;;;;;117:28;;8:9:-1;5:2;;;30:1;27;20:12;5:2;117:28:7;;;;;;;;;;;;;;;;;;;;;;;;;;;294:189;;8:9:-1;5:2;;;30:1;27;20:12;5:2;294:189:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;489:62;;8:9:-1;5:2;;;30:1;27;20:12;5:2;489:62:7;;;;;;106:96:5;;8:9:-1;5:2;;;30:1;27;20:12;5:2;106:96:5;;;;;;;;;;;;;;;;;;;;;;;;;;;59:19:7;;;;:::o;84:27::-;;;;:::o;152:135::-;237:5;230:4;:12;;;;;;;267:13;252:12;:28;;;;;;;152:135;;:::o;557:59::-;605:4;594:8;;:15;;;;;;;;;;;;;;;;;;557:59::o;117:28::-;;;;;;;;;;;;;:::o;294:189::-;333:13;348:21;371:14;404:4;;396:12;;434;;418:28;;468:8;;;;;;;;;;;456:20;;294:189;;;:::o;489:62::-;539:5;528:8;;:16;;;;;;;;;;;;;;;;;;489:62::o;106:96:5:-;153:20;191:4;184:11;;106:96;:::o",
   "source": "pragma solidity ^0.4.24;\n\nimport \"./ParticipantData.sol\";\n\ncontract Municipality is ParticipantData{\n\n    function isMunicipality() pure public returns (bool _isMunicipality){\n        return true;\n    }\n\n}\n",
   "sourcePath": "/Users/iraeidelman/IdeaProjects/ira-blockchain/contracts/Municipality.sol",
   "ast": {
     "absolutePath": "/Users/iraeidelman/IdeaProjects/ira-blockchain/contracts/Municipality.sol",
     "exportedSymbols": {
       "Municipality": [
-        417
+        362
       ]
     },
-    "id": 418,
+    "id": 363,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 405,
+        "id": 350,
         "literals": [
           "solidity",
           "^",
@@ -141,16 +141,16 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:6"
+        "src": "0:24:5"
       },
       {
         "absolutePath": "/Users/iraeidelman/IdeaProjects/ira-blockchain/contracts/ParticipantData.sol",
         "file": "./ParticipantData.sol",
-        "id": 406,
+        "id": 351,
         "nodeType": "ImportDirective",
-        "scope": 418,
-        "sourceUnit": 566,
-        "src": "26:31:6",
+        "scope": 363,
+        "sourceUnit": 511,
+        "src": "26:31:5",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -160,53 +160,53 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 407,
+              "id": 352,
               "name": "ParticipantData",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 565,
-              "src": "84:15:6",
+              "referencedDeclaration": 510,
+              "src": "84:15:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ParticipantData_$565",
+                "typeIdentifier": "t_contract$_ParticipantData_$510",
                 "typeString": "contract ParticipantData"
               }
             },
-            "id": 408,
+            "id": 353,
             "nodeType": "InheritanceSpecifier",
-            "src": "84:15:6"
+            "src": "84:15:5"
           }
         ],
         "contractDependencies": [
-          565
+          510
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 417,
+        "id": 362,
         "linearizedBaseContracts": [
-          417,
-          565
+          362,
+          510
         ],
         "name": "Municipality",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 415,
+              "id": 360,
               "nodeType": "Block",
-              "src": "174:28:6",
+              "src": "174:28:5",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 413,
+                    "id": 358,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "191:4:6",
+                    "src": "191:4:5",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -214,15 +214,15 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 412,
-                  "id": 414,
+                  "functionReturnParameters": 357,
+                  "id": 359,
                   "nodeType": "Return",
-                  "src": "184:11:6"
+                  "src": "184:11:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 416,
+            "id": 361,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -230,23 +230,23 @@
             "name": "isMunicipality",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 409,
+              "id": 354,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "129:2:6"
+              "src": "129:2:5"
             },
             "payable": false,
             "returnParameters": {
-              "id": 412,
+              "id": 357,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 411,
+                  "id": 356,
                   "name": "_isMunicipality",
                   "nodeType": "VariableDeclaration",
-                  "scope": 416,
-                  "src": "153:20:6",
+                  "scope": 361,
+                  "src": "153:20:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -254,10 +254,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 410,
+                    "id": 355,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "153:4:6",
+                    "src": "153:4:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -267,33 +267,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "152:22:6"
+              "src": "152:22:5"
             },
-            "scope": 417,
-            "src": "106:96:6",
+            "scope": 362,
+            "src": "106:96:5",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 418,
-        "src": "59:146:6"
+        "scope": 363,
+        "src": "59:146:5"
       }
     ],
-    "src": "0:206:6"
+    "src": "0:206:5"
   },
   "legacyAST": {
     "absolutePath": "/Users/iraeidelman/IdeaProjects/ira-blockchain/contracts/Municipality.sol",
     "exportedSymbols": {
       "Municipality": [
-        417
+        362
       ]
     },
-    "id": 418,
+    "id": 363,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 405,
+        "id": 350,
         "literals": [
           "solidity",
           "^",
@@ -301,16 +301,16 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:6"
+        "src": "0:24:5"
       },
       {
         "absolutePath": "/Users/iraeidelman/IdeaProjects/ira-blockchain/contracts/ParticipantData.sol",
         "file": "./ParticipantData.sol",
-        "id": 406,
+        "id": 351,
         "nodeType": "ImportDirective",
-        "scope": 418,
-        "sourceUnit": 566,
-        "src": "26:31:6",
+        "scope": 363,
+        "sourceUnit": 511,
+        "src": "26:31:5",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -320,53 +320,53 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 407,
+              "id": 352,
               "name": "ParticipantData",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 565,
-              "src": "84:15:6",
+              "referencedDeclaration": 510,
+              "src": "84:15:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ParticipantData_$565",
+                "typeIdentifier": "t_contract$_ParticipantData_$510",
                 "typeString": "contract ParticipantData"
               }
             },
-            "id": 408,
+            "id": 353,
             "nodeType": "InheritanceSpecifier",
-            "src": "84:15:6"
+            "src": "84:15:5"
           }
         ],
         "contractDependencies": [
-          565
+          510
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 417,
+        "id": 362,
         "linearizedBaseContracts": [
-          417,
-          565
+          362,
+          510
         ],
         "name": "Municipality",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 415,
+              "id": 360,
               "nodeType": "Block",
-              "src": "174:28:6",
+              "src": "174:28:5",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 413,
+                    "id": 358,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "191:4:6",
+                    "src": "191:4:5",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -374,15 +374,15 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 412,
-                  "id": 414,
+                  "functionReturnParameters": 357,
+                  "id": 359,
                   "nodeType": "Return",
-                  "src": "184:11:6"
+                  "src": "184:11:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 416,
+            "id": 361,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -390,23 +390,23 @@
             "name": "isMunicipality",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 409,
+              "id": 354,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "129:2:6"
+              "src": "129:2:5"
             },
             "payable": false,
             "returnParameters": {
-              "id": 412,
+              "id": 357,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 411,
+                  "id": 356,
                   "name": "_isMunicipality",
                   "nodeType": "VariableDeclaration",
-                  "scope": 416,
-                  "src": "153:20:6",
+                  "scope": 361,
+                  "src": "153:20:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -414,10 +414,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 410,
+                    "id": 355,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "153:4:6",
+                    "src": "153:4:5",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -427,20 +427,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "152:22:6"
+              "src": "152:22:5"
             },
-            "scope": 417,
-            "src": "106:96:6",
+            "scope": 362,
+            "src": "106:96:5",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 418,
-        "src": "59:146:6"
+        "scope": 363,
+        "src": "59:146:5"
       }
     ],
-    "src": "0:206:6"
+    "src": "0:206:5"
   },
   "compiler": {
     "name": "solc",
@@ -448,5 +448,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-07T08:57:05.662Z"
+  "updatedAt": "2018-06-10T15:48:53.290Z"
 }

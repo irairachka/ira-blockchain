@@ -6,35 +6,30 @@ import "./Customer.sol";
 import "./Ownable.sol";
 import "./RoleUtils.sol";
 
-contract BaseGuaranteeData is Ownable{
+contract BaseGuaranteeData is Ownable, RoleUtils{
 
-//    Municipality municipality;
-//    Bank bank;
-//    Customer customer;
+    Municipality municipality;
+    Bank bank;
+    Customer customer;
 
-    address municipality;
-    address bank;
-    address customer;
 
     bytes guaranteeDocumentHash;
 
-    RoleUtils roleUtils;
 
     // this is an  Abstract Contract
-    constructor (address roleUtilsAddress) internal {
-        roleUtils = RoleUtils(roleUtilsAddress);
+    constructor () internal {
         emit BaseGuaranteeCreated("The BaseGuarantee created!!!", this, msg.sender, now);
     }
 
 
     modifier onlyAdmin() {
-        if (roleUtils.isAdmin(msg.sender))
+        if (isAdmin(msg.sender))
             _;
     }
 
 
     modifier environmentMakerOnly() {
-        if (roleUtils.isEnvironmentMaker(msg.sender))
+        if (isEnvironmentMaker(msg.sender))
             _;
     }
 
@@ -46,8 +41,7 @@ contract BaseGuaranteeData is Ownable{
 
 
 
-   // function populateBaseGuaranteeData(Municipality _municipality, Bank _bank, Customer _customer, bytes _guaranteeDocumentHash) onlyAdmin  public {
-    function populateBaseGuaranteeData(address _municipality, address _bank, address _customer, bytes _guaranteeDocumentHash) onlyAdmin  public {
+    function populateBaseGuaranteeData(Municipality _municipality, Bank _bank, Customer _customer, bytes _guaranteeDocumentHash) onlyAdmin  public {
         municipality = _municipality;
         bank = _bank;
         customer = _customer;
