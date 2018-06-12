@@ -9,7 +9,7 @@ contract Customer is ParticipantData {
     address customerAccount;
 
     event NewCustomerCreated(address theContractAddress, address theSenderAddress, uint timestamp);
-    event CustomerDataPopulated(bytes32 name, address _customerAccount, address theContractAddress, address theSenderAddress, uint timestamp);
+    event CustomerDataPopulated(bytes32 name, address theAccount, address theContractAddress, address theSenderAddress, uint timestamp);
 
     function isCustomer() pure public returns (bool){
         return true;

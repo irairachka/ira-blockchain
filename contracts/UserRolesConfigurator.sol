@@ -12,11 +12,11 @@ contract UserRolesConfigurator  is Ownable{
         bool isActive;
     }
 
-    event GeneralAdminCreated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
+    event GeneralAdminCreated(string theMessage, address theAccount, address theContractAddress, address theSenderAddress, uint timestamp);
 
     constructor () public {
-        generalAdmin = 0xc5fdf4076b8f3a5357c5e395ab970b5b54098fef;
-        emit GeneralAdminCreated("General Admin is created", this, msg.sender, now);
+        generalAdmin = 0x5aeda56215b167893e80b4fe645ba6d5bab767de;
+        emit GeneralAdminCreated("General Admin is created", generalAdmin, this, msg.sender, now);
     }
 
 

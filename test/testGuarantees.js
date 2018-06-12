@@ -48,7 +48,8 @@ console.log("+++++++++++++++++++ CURRENT_BLOCK_TR_NUMBER : " + versionVal);
 console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 
 var FirstGuarantee = artifacts.require("./FirstGuarantee.sol");
-//var FirstGuaranteestr = FirstGuarantee.
+var RoleUtils = artifacts.require("./RoleUtils.sol");
+
 
 contract("FirstGuarantee", function(accounts) {
     var first_account = accounts[0];
@@ -79,8 +80,14 @@ contract("FirstGuarantee", function(accounts) {
         }).then(function (guaranteeAddress) {
             console.log("guaranteeAddress: " + guaranteeAddress);
 
+            return RoleUtils.deployed();
+
+        }).then(function (roleUtilsInstance){
+
+            console.log("roleUtilsAddress: " + roleUtilsInstance.address);
+
             //return FirstGuarantee.new(constructorParam1] [, constructorParam2], {from: first_account});
-            return FirstGuarantee.new({from: first_account});
+            return FirstGuarantee.new(roleUtilsInstance.address, {from: first_account});
         }).then(function (newContractInstance){
             console.log("New guarantee CREATED !!!");
             console.log("New guarantee specific Events - first execution:");
@@ -137,11 +144,13 @@ contract("FirstGuarantee", function(accounts) {
     populateHistoryLineData=(event, args)=> {
 
         var theMessage = args.theMessage;
+        var theAccount = args.theAccount;
         const theContractAddress = args.theContractAddress;
         const theSenderAddress = args.theSenderAddress;
         const theDate = (new Date(args.timestamp.valueOf() * 1000) ).toDateString();
 
         console.log("         theMessage: " + theMessage);
+        console.log("         theAccount: " + theAccount);
         console.log("         theContractAddress: " + theContractAddress);
         console.log("         theSenderAddress: " + theSenderAddress);
         console.log("         theDate: " + theDate);

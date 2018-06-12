@@ -6,38 +6,40 @@ import "./Customer.sol";
 import "./Ownable.sol";
 import "./RoleUtils.sol";
 
-contract BaseGuaranteeData is Ownable, RoleUtils{
+contract BaseGuaranteeData is Ownable{
 
     Municipality municipality;
     Bank bank;
     Customer customer;
 
-
     bytes guaranteeDocumentHash;
 
+    // for user roles validations
+    RoleUtils roleUtils;
+
+    event BaseGuaranteeCreated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
+    event BaseGuaranteePopulated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
 
     // this is an  Abstract Contract
-    constructor () internal {
+    constructor (address roleUtilsAddress)  {
+        roleUtils = RoleUtils(roleUtilsAddress);
         emit BaseGuaranteeCreated("The BaseGuarantee created!!!", this, msg.sender, now);
     }
 
 
     modifier onlyAdmin() {
-        if (isAdmin(msg.sender))
+        if (roleUtils.isAdmin(msg.sender))
             _;
     }
 
 
     modifier environmentMakerOnly() {
-        if (isEnvironmentMaker(msg.sender))
+        if (roleUtils.isEnvironmentMaker(msg.sender))
             _;
     }
 
 
     function getId() constant public returns (address _contract_id);
-
-    event BaseGuaranteeCreated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
-    event BaseGuaranteePopulated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
 
 
 

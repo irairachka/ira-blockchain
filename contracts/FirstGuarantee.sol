@@ -14,7 +14,7 @@ contract FirstGuarantee is BaseGuaranteeData {
     }
 
 
-    constructor () public {
+    constructor (address roleUtilsAddress) public BaseGuaranteeData(roleUtilsAddress){
 
         emit FirstGuaranteeCreated("The FirstGuarantee created!!!", this, msg.sender, now);
     }
