@@ -75,6 +75,12 @@ contract("FirstGuarantee", function(accounts) {
             account = ownerAddress;
             console.log("ownerAddress: "+ ownerAddress);
 
+            return globalFirstGuarantee.roleUtils.call();
+
+        }).then(function (roleUtils) {
+
+            console.log("global roleUtils: " + roleUtils.address);
+
             return globalFirstGuarantee.getId.call();
 
         }).then(function (guaranteeAddress) {
@@ -96,7 +102,11 @@ contract("FirstGuarantee", function(accounts) {
         }).then(function () {
             console.log("Global Events - second execution:");
 
-            return getGuaranteeHistoryEvents(globalFirstGuarantee);
+            return FirstGuarantee.deployed();
+
+        }).then(function (secondGlobalFirstGuarantee){
+
+            return getGuaranteeHistoryEvents(secondGlobalFirstGuarantee);
         }).then(function (replay) {
             logBlockchainStatusAfterGaranteeCreation();
 
@@ -148,12 +158,14 @@ contract("FirstGuarantee", function(accounts) {
         const theContractAddress = args.theContractAddress;
         const theSenderAddress = args.theSenderAddress;
         const theDate = (new Date(args.timestamp.valueOf() * 1000) ).toDateString();
+        const theOriginDate = args.timestamp;
 
         console.log("         theMessage: " + theMessage);
         console.log("         theAccount: " + theAccount);
         console.log("         theContractAddress: " + theContractAddress);
         console.log("         theSenderAddress: " + theSenderAddress);
         console.log("         theDate: " + theDate);
+        console.log("         theOriginDate: " + theOriginDate);
 
         var ask = {
             eventname: event,

@@ -15,15 +15,17 @@ contract BaseGuaranteeData is Ownable{
     bytes guaranteeDocumentHash;
 
     // for user roles validations
-    RoleUtils roleUtils;
+    RoleUtils public roleUtils;
 
     event BaseGuaranteeCreated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
     event BaseGuaranteePopulated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
+    event RoleUtilsAdded(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
 
     // this is an  Abstract Contract
-    constructor (address roleUtilsAddress)  {
+    constructor (address roleUtilsAddress) internal {
         roleUtils = RoleUtils(roleUtilsAddress);
         emit BaseGuaranteeCreated("The BaseGuarantee created!!!", this, msg.sender, now);
+        emit RoleUtilsAdded("The RoleUtils address is ", roleUtils, msg.sender, now);
     }
 
 
