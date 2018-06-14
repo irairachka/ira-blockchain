@@ -20,8 +20,8 @@ contract FirstGuarantee is BaseGuaranteeData {
     }
 
 
-    function populateBaseGuaranteeData(Municipality _municipality, Bank _bank, Customer _customer, bytes _guaranteeDocumentHash) onlyAdmin public {
-        BaseGuaranteeData.populateBaseGuaranteeData(_municipality, _bank, _customer, _guaranteeDocumentHash);
+    function populateGuaranteeData(address _municipality, address _bank, address _customer, bytes _guaranteeDocumentHash) onlyAdmin public {
+        populateBaseGuaranteeData(_municipality, _bank, _customer, _guaranteeDocumentHash);
 
         emit FirstGuaranteePopulated("FirstGuaranty data populated", this, msg.sender, now);
     }

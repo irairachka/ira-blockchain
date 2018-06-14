@@ -9,7 +9,7 @@ import "./RoleUtils.sol";
 contract BaseGuaranteeData is Ownable{
 
     Municipality municipality;
-    Bank bank;
+    Bank public bank;
     Customer customer;
 
     bytes guaranteeDocumentHash;
@@ -45,13 +45,21 @@ contract BaseGuaranteeData is Ownable{
 
 
 
-    function populateBaseGuaranteeData(Municipality _municipality, Bank _bank, Customer _customer, bytes _guaranteeDocumentHash) onlyAdmin  public {
+    function setBaseGuaranteeData(Municipality _municipality, Bank _bank, Customer _customer, bytes _guaranteeDocumentHash) onlyAdmin internal{
         municipality = _municipality;
         bank = _bank;
         customer = _customer;
         guaranteeDocumentHash = _guaranteeDocumentHash;
 
-        emit BaseGuaranteePopulated("BaseGuaranty data populated", this, msg.sender, now);
+        emit BaseGuaranteePopulated("BaseGuarantee data populated", this, msg.sender, now);
+    }
+
+    function populateBaseGuaranteeData(address _municipality, address _bank, address _customer, bytes _guaranteeDocumentHash) onlyAdmin public {
+        Municipality municipality = Municipality(_municipality);
+        Bank bank = Bank(_bank);
+        Customer customer = Customer(_customer);
+
+        setBaseGuaranteeData(municipality, bank, customer, guaranteeDocumentHash);
     }
 
 

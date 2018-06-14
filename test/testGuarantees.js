@@ -49,7 +49,13 @@ console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 var FirstGuarantee = artifacts.require("./FirstGuarantee.sol");
 var RoleUtils = artifacts.require("./RoleUtils.sol");
+var Bank = artifacts.require("./Bank.sol");
+var Customer = artifacts.require("./Customer.sol");
+var Municipality = artifacts.require("./Municipality.sol");
 
+var sha3_512 = require('js-sha3').sha3_512;
+
+//const SHA3 = require('sha3');
 
 contract("FirstGuarantee", function(accounts) {
     var first_account = accounts[0];
@@ -60,6 +66,7 @@ contract("FirstGuarantee", function(accounts) {
         console.log("first_account in Quorum: " + first_account);
 
         var globalFirstGuarantee;
+        var newFirstGuarantee;
 
         return FirstGuarantee.deployed().then(function(instance) {
             globalFirstGuarantee = instance;
@@ -79,7 +86,7 @@ contract("FirstGuarantee", function(accounts) {
 
         }).then(function (roleUtils) {
 
-            console.log("global roleUtils: " + roleUtils.address);
+            console.log("global roleUtils: " + roleUtils);
 
             return globalFirstGuarantee.getId.call();
 
@@ -98,8 +105,36 @@ contract("FirstGuarantee", function(accounts) {
             console.log("New guarantee CREATED !!!");
             console.log("New guarantee specific Events - first execution:");
 
-            return getGuaranteeHistoryEvents(newContractInstance);
+            newFirstGuarantee = newContractInstance;
+
+            var bankHapoalim = Bank.at('0xf17f52151ebef6c7334fad080c5704d77216b732');
+            var customer = Customer.at('0xc5fdf4076b8f3a5357c5e395ab970b5b54098fef');
+            var municipality = Municipality.at('0x821aea9a577a9b44299b9c15c88cf3087f3b5544');
+            var pdfHash = sha3_512("this is a pdf file content");
+
+            console.log("bankHapoalim: " + bankHapoalim.address);
+            console.log("customer: " + customer.address);
+            console.log("municipality: " + municipality.address);
+            console.log("pdfHash: " + pdfHash);
+            console.log("newContractInstance: " + newFirstGuarantee.address);
+
+            //FirstGuarantee newfirstGuarantee = newContractInstance;
+
+            return newFirstGuarantee.populateGuaranteeData.sendTransaction(municipality.address, bankHapoalim.address, customer.address, pdfHash);
         }).then(function () {
+
+            console.log("Guarantee data is populated !!!!!!");
+
+            //recall ne guarantee
+            var recalled_FirstGuarantee = FirstGuarantee.at(newFirstGuarantee.address);
+
+            return recalled_FirstGuarantee.bank.call();
+            //return newFirstGuarantee.bank.call();
+
+            return getGuaranteeHistoryEvents(recalled_FirstGuarantee);
+        }).then(function (bank) {
+            console.log("bank in the new guarantee: " + bank.);
+
             console.log("Global Events - second execution:");
 
             return FirstGuarantee.deployed();

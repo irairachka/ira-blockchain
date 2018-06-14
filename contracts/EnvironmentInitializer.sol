@@ -4,7 +4,7 @@ import "./Municipality.sol";
 import "./Bank.sol";
 import "./Customer.sol";
 
-contract Initializer {
+contract EnvironmentInitializer {
 
     event BankListInitialized (address[] banks);
     event CustomerListInitialized (address[] customers);

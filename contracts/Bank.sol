@@ -4,7 +4,7 @@ import "./ParticipantData.sol";
 
 contract Bank is ParticipantData{
 
-    address bankAccount;
+    address public bankAccount;
 
     event NewBankCreated(address theContractAddress, address theSenderAddress, uint timestamp);
     event BankDataPopulated(bytes32 name, address theAccount, address theContractAddress, address theSenderAddress, uint timestamp);
