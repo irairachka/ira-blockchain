@@ -6,25 +6,16 @@ import "./Customer.sol";
 
 contract EnvironmentInitializer {
 
-    event BankListInitialized (address[] banks);
-    event CustomerListInitialized (address[] customers);
-    event MunicipalityListInitialized (address [] Municipalities);
-
-    constructor() public{
-
-        createInitialBankList();
-
-    }
+//    event BankListInitialized (address bank);
+//    event CustomerListInitialized (address customer);
+//    event MunicipalityListInitialized (address municipality);
 
 
-    function createInitialBankList() internal  { //returns (address[])
 
-        //address[] storage banks = new address[](3);
-        Bank poalimBank = new Bank();
-        poalimBank.populateBankData(0xf17f52151ebef6c7334fad080c5704d77216b732, "Bank Ha Poalim", "Ha Negev 11, Tel Aviv");
-        //banks[0] = poalimBank;
+    function createInitialBankList() public  returns (Bank theBank){
 
-        //return banks;
+        Bank theBank = new Bank();
+        theBank.populateBankData(0xf17f52151ebef6c7334fad080c5704d77216b732, "Bank Ha Poalim", "Ha Negev 11, Tel Aviv");
     }
 
 
