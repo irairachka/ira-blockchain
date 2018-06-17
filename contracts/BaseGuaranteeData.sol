@@ -54,7 +54,7 @@ contract BaseGuaranteeData is Ownable{
         emit BaseGuaranteePopulated("BaseGuarantee data populated", this, msg.sender, now);
     }
 
-    function populateBaseGuaranteeData(address _municipality, address _bank, address _customer, bytes _guaranteeDocumentHash) onlyAdmin public {
+    function populateBaseGuaranteeData(address _municipality, address _bankAccount, address _customer, bytes _guaranteeDocumentHash) onlyAdmin public {
         Municipality municipality = Municipality(_municipality);
         Bank bank = Bank(_bank);
         Customer customer = Customer(_customer);
