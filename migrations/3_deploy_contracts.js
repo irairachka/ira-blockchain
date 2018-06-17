@@ -6,7 +6,6 @@ module.exports = function(deployer, network, accounts) {
 
         deployer.then( function() {
 
-            //return RoleUtils.deployed();
             return deployer.deploy(RoleUtils);
 
         }).then(function (roleUtilsInstance){

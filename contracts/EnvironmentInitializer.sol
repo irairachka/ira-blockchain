@@ -12,6 +12,13 @@ contract EnvironmentInitializer {
     mapping (address=>Customer) internal customersList;
 
 
+    constructor(){
+        createInitialBankList();
+        createInitialCustomerList();
+        createInitialMunicipalityList();
+    }
+
+
 
     function createInitialBankList() public  returns (Bank theBank){
 
