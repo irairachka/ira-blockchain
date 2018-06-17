@@ -133,7 +133,7 @@ contract("FirstGuarantee", function(accounts) {
 
             return getGuaranteeHistoryEvents(recalled_FirstGuarantee);
         }).then(function (bank) {
-            console.log("bank in the new guarantee: " + bank.);
+            console.log("bank in the new guarantee: " + bank.address);
 
             console.log("Global Events - second execution:");
 
