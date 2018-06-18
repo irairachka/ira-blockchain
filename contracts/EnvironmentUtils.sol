@@ -9,19 +9,20 @@ import "./Customer.sol";
 contract EnvironmentUtils is EnvironmentInitializer{
 
 
-    event GetBankCalled(bytes32 name, address theAccount, address theContractAddress, address theSenderAddress, uint timestamp);
+    event GetBankCalled(string name, address theAccount, address theContractAddress, address theSenderAddress, uint timestamp);
 
     function getMunicipalityByAccount(address theAccount) returns (Municipality municipality) {
         return municipalitiesList[theAccount];
     }
 
 
-    function getBankByAccount(address theAccount) public returns (Bank _bank) {
+    function getBankByAccount(address theAccount) public returns (address) {
         Bank bank = banksList[theAccount];
+        address bankAddress = address(bank);
 
-        emit GetBankCalled(bank.name(), theAccount, bank, msg.sender, now);
+        emit GetBankCalled(bank.participantName(), bank.bankAccount(), bankAddress , msg.sender, now);
 
-        return bank;
+        return bankAddress;
     }
 
     function getCustomerByAccount(address theAccount) public returns (Customer customer) {

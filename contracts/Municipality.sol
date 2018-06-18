@@ -8,7 +8,7 @@ contract Municipality is ParticipantData{
     address municipalityAccount;
 
     event NewMunicipalityCreated(address theContractAddress, address theSenderAddress, uint timestamp);
-    event MunicipalityDataPopulated(bytes32 name, address theAccount, address theContractAddress, address theSenderAddress, uint timestamp);
+    event MunicipalityDataPopulated(string name, address theAccount, address theContractAddress, address theSenderAddress, uint timestamp);
 
     function isMunicipality() pure public returns (bool _isMunicipality){
         return true;
@@ -20,9 +20,9 @@ contract Municipality is ParticipantData{
 
 
 
-    function populateMunicipalityData (address _municipalityAccount, bytes32 _name, bytes32 _localAddress) public {
+    function populateMunicipalityData (address _municipalityAccount, string _name, string _localAddress) public {
         municipalityAccount = _municipalityAccount;
-        name = _name;
+        participantName = _name;
         localAddress = _localAddress;
         isActive = true;
 

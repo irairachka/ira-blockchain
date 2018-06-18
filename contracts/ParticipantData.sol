@@ -3,18 +3,18 @@ pragma solidity ^0.4.24;
 
 contract ParticipantData {
 
-    bytes32 public name;
-    bytes32 public localAddress;
+    string public participantName;
+    string public localAddress;
     bool public isActive = false;
 
-    function populateData (bytes32 _name, bytes32 _localAddress) public {
-        name = _name;
+    function populateData (string _name, string _localAddress) public {
+        participantName = _name;
         localAddress = _localAddress;
     }
 
 
-    function getData() public view returns(bytes32 _name, bytes32 _localAddress, bool _isActive){
-        _name = name;
+    function getData() public view returns(string _name, string _localAddress, bool _isActive){
+        _name = participantName;
         _localAddress = localAddress;
         _isActive = isActive;
     }

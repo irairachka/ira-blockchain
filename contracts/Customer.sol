@@ -9,7 +9,7 @@ contract Customer is ParticipantData {
     address customerAccount;
 
     event NewCustomerCreated(address theContractAddress, address theSenderAddress, uint timestamp);
-    event CustomerDataPopulated(bytes32 name, address theAccount, address theContractAddress, address theSenderAddress, uint timestamp);
+    event CustomerDataPopulated(string name, address theAccount, address theContractAddress, address theSenderAddress, uint timestamp);
 
     function isCustomer() pure public returns (bool){
         return true;
@@ -21,9 +21,9 @@ contract Customer is ParticipantData {
 
 
 
-    function populateCustomerData (address _customerAccount, bytes32 _name, bytes32 _localAddress) public {
+    function populateCustomerData (address _customerAccount, string _name, string _localAddress) public {
         customerAccount = _customerAccount;
-        name = _name;
+        participantName = _name;
         localAddress = _localAddress;
         isActive = true;
 

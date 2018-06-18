@@ -23,7 +23,7 @@ contract EnvironmentInitializer {
     function createInitialBankList() public  returns (Bank _bank){
 
         Bank theBank = new Bank();
-        theBank.populateBankData(0xf17f52151ebef6c7334fad080c5704d77216b732, "Bank Ha Poalim", "Ha Negev 11, Tel Aviv");
+        theBank.populateBankData(0xf17f52151ebef6c7334fad080c5704d77216b732, "Bank_Ha_Poalim", "Ha Negev 11, Tel Aviv");
         banksList[0xf17f52151ebef6c7334fad080c5704d77216b732] = theBank;
 
         return theBank;

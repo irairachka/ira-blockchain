@@ -69,6 +69,7 @@ contract("FirstGuarantee", function(accounts) {
         var globalFirstGuarantee;
         var newFirstGuarantee;
         var environmentUtils;
+        var bankHapoalim;
 
         return FirstGuarantee.deployed().then(function(instance) {
             globalFirstGuarantee = instance;
@@ -115,21 +116,22 @@ contract("FirstGuarantee", function(accounts) {
             environmentUtils = _environmentUtils;
             console.log("environmentUtils: " + environmentUtils.address);
 
-            return environmentUtils.getBankByAccount(0xf17f52151ebef6c7334fad080c5704d77216b732);
+            return environmentUtils.getBankByAccount.call('0xf17f52151ebef6c7334fad080c5704d77216b732');
 
-        }).then(function () {
+        }).then(function (_bankHapoalim) {
+            bankHapoalim = _bankHapoalim;
+            console.log("bankHapoalim: " + bankHapoalim);
 
             return getContractHistoryEvents(environmentUtils);
 
-        }).then(function (bankHapoalim) {
+        }).then(function () {
 
-            console.log("bankHapoalim: " + bankHapoalim.address);
 
             var customer = Customer.at('0xc5fdf4076b8f3a5357c5e395ab970b5b54098fef');
             var municipality = Municipality.at('0x821aea9a577a9b44299b9c15c88cf3087f3b5544');
             var pdfHash = sha3_512("this is a pdf file content");
 
-            return newFirstGuarantee.populateGuaranteeData.sendTransaction(municipality.address, bankHapoalim.address, customer.address, pdfHash);
+            return newFirstGuarantee.populateGuaranteeData.sendTransaction(municipality.address, bankHapoalim, customer.address, pdfHash);
         }).then(function () {
 
             console.log("Guarantee data is populated !!!!!!");
