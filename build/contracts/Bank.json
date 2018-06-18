@@ -214,8 +214,8 @@
   ],
   "bytecode": "0x60806040526000600260006101000a81548160ff02191690831515021790555034801561002b57600080fd5b507f80529267470a8cf238458a8261b192a5f922d8bd71140e39aa41c5bd973336e1303342604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a161052a806100da6000396000f3006080604052600436106100a4576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde03146100a957806308db16cb146100dc5780630d55748d1461010f5780630f15f4c01461014e578063164be8581461016557806322f3e2d414610194578063377a0f53146101c35780633bc5de301461021a57806351b42b0014610267578063d699d6261461027e575b600080fd5b3480156100b557600080fd5b506100be6102dd565b60405180826000191660001916815260200191505060405180910390f35b3480156100e857600080fd5b506100f16102e3565b60405180826000191660001916815260200191505060405180910390f35b34801561011b57600080fd5b5061014c600480360381019080803560001916906020019092919080356000191690602001909291905050506102e9565b005b34801561015a57600080fd5b50610163610303565b005b34801561017157600080fd5b5061017a610320565b604051808215151515815260200191505060405180910390f35b3480156101a057600080fd5b506101a9610329565b604051808215151515815260200191505060405180910390f35b3480156101cf57600080fd5b506101d861033c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561022657600080fd5b5061022f610362565b604051808460001916600019168152602001836000191660001916815260200182151515158152602001935050505060405180910390f35b34801561027357600080fd5b5061027c610387565b005b34801561028a57600080fd5b506102db600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803560001916906020019092919080356000191690602001909291905050506103a4565b005b60005481565b60015481565b816000816000191690555080600181600019169055505050565b6001600260006101000a81548160ff021916908315150217905550565b60006001905090565b600260009054906101000a900460ff1681565b600260019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000806000805492506001549150600260009054906101000a900460ff169050909192565b6000600260006101000a81548160ff021916908315150217905550565b82600260016101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550816000816000191690555080600181600019169055506001600260006101000a81548160ff0219169083151502179055507fca0cd9bac30bf47a2e7c87896abf2698f77a692c69197a9750a0a8362fbdea2d82843033426040518086600019166000191681526020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019550505050505060405180910390a15050505600a165627a7a72305820c95b7c4fff8b0956235b83d8355471be80bb0e584dc53afce7ba78ab05ef7f9a0029",
   "deployedBytecode": "0x6080604052600436106100a4576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde03146100a957806308db16cb146100dc5780630d55748d1461010f5780630f15f4c01461014e578063164be8581461016557806322f3e2d414610194578063377a0f53146101c35780633bc5de301461021a57806351b42b0014610267578063d699d6261461027e575b600080fd5b3480156100b557600080fd5b506100be6102dd565b60405180826000191660001916815260200191505060405180910390f35b3480156100e857600080fd5b506100f16102e3565b60405180826000191660001916815260200191505060405180910390f35b34801561011b57600080fd5b5061014c600480360381019080803560001916906020019092919080356000191690602001909291905050506102e9565b005b34801561015a57600080fd5b50610163610303565b005b34801561017157600080fd5b5061017a610320565b604051808215151515815260200191505060405180910390f35b3480156101a057600080fd5b506101a9610329565b604051808215151515815260200191505060405180910390f35b3480156101cf57600080fd5b506101d861033c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561022657600080fd5b5061022f610362565b604051808460001916600019168152602001836000191660001916815260200182151515158152602001935050505060405180910390f35b34801561027357600080fd5b5061027c610387565b005b34801561028a57600080fd5b506102db600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803560001916906020019092919080356000191690602001909291905050506103a4565b005b60005481565b60015481565b816000816000191690555080600181600019169055505050565b6001600260006101000a81548160ff021916908315150217905550565b60006001905090565b600260009054906101000a900460ff1681565b600260019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000806000805492506001549150600260009054906101000a900460ff169050909192565b6000600260006101000a81548160ff021916908315150217905550565b82600260016101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550816000816000191690555080600181600019169055506001600260006101000a81548160ff0219169083151502179055507fca0cd9bac30bf47a2e7c87896abf2698f77a692c69197a9750a0a8362fbdea2d82843033426040518086600019166000191681526020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019550505050505060405180910390a15050505600a165627a7a72305820c95b7c4fff8b0956235b83d8355471be80bb0e584dc53afce7ba78ab05ef7f9a0029",
-  "sourceMap": "59:770:0:-;;;140:5:8;117:28;;;;;;;;;;;;;;;;;;;;361:80:0;8:9:-1;5:2;;;30:1;27;20:12;5:2;361:80:0;397:37;412:4;418:10;430:3;397:37;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;59:770;;;;;;",
-  "deployedSourceMap": "59:770:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:19:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:19:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;84:27;;8:9:-1;5:2;;;30:1;27;20:12;5:2;84:27:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;152:135;;8:9:-1;5:2;;;30:1;27;20:12;5:2;152:135:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;557:59;;8:9:-1;5:2;;;30:1;27;20:12;5:2;557:59:8;;;;;;447:72:0;;8:9:-1;5:2;;;30:1;27;20:12;5:2;447:72:0;;;;;;;;;;;;;;;;;;;;;;;;;;;117:28:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;117:28:8;;;;;;;;;;;;;;;;;;;;;;;;;;;98:26:0;;8:9:-1;5:2;;;30:1;27;20:12;5:2;98:26:0;;;;;;;;;;;;;;;;;;;;;;;;;;;294:189:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;294:189:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;489:62;;8:9:-1;5:2;;;30:1;27;20:12;5:2;489:62:8;;;;;;526:299:0;;8:9:-1;5:2;;;30:1;27;20:12;5:2;526:299:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;59:19:8;;;;:::o;84:27::-;;;;:::o;152:135::-;237:5;230:4;:12;;;;;;;267:13;252:12;:28;;;;;;;152:135;;:::o;557:59::-;605:4;594:8;;:15;;;;;;;;;;;;;;;;;;557:59::o;447:72:0:-;486:4;508;501:11;;447:72;:::o;117:28:8:-;;;;;;;;;;;;;:::o;98:26:0:-;;;;;;;;;;;;;:::o;294:189:8:-;333:13;348:21;371:14;404:4;;396:12;;434;;418:28;;468:8;;;;;;;;;;;456:20;;294:189;;;:::o;489:62::-;539:5;528:8;;:16;;;;;;;;;;;;;;;;;;489:62::o;526:299:0:-;644:12;630:11;;:26;;;;;;;;;;;;;;;;;;673:5;666:4;:12;;;;;;;703:13;688:12;:28;;;;;;;737:4;726:8;;:15;;;;;;;;;;;;;;;;;;757:61;775:5;782:12;796:4;802:10;814:3;757:61;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;526:299;;;:::o",
+  "sourceMap": "59:770:0:-;;;140:5:9;117:28;;;;;;;;;;;;;;;;;;;;361:80:0;8:9:-1;5:2;;;30:1;27;20:12;5:2;361:80:0;397:37;412:4;418:10;430:3;397:37;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;59:770;;;;;;",
+  "deployedSourceMap": "59:770:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:19:9;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:19:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;84:27;;8:9:-1;5:2;;;30:1;27;20:12;5:2;84:27:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;152:135;;8:9:-1;5:2;;;30:1;27;20:12;5:2;152:135:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;557:59;;8:9:-1;5:2;;;30:1;27;20:12;5:2;557:59:9;;;;;;447:72:0;;8:9:-1;5:2;;;30:1;27;20:12;5:2;447:72:0;;;;;;;;;;;;;;;;;;;;;;;;;;;117:28:9;;8:9:-1;5:2;;;30:1;27;20:12;5:2;117:28:9;;;;;;;;;;;;;;;;;;;;;;;;;;;98:26:0;;8:9:-1;5:2;;;30:1;27;20:12;5:2;98:26:0;;;;;;;;;;;;;;;;;;;;;;;;;;;294:189:9;;8:9:-1;5:2;;;30:1;27;20:12;5:2;294:189:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;489:62;;8:9:-1;5:2;;;30:1;27;20:12;5:2;489:62:9;;;;;;526:299:0;;8:9:-1;5:2;;;30:1;27;20:12;5:2;526:299:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;59:19:9;;;;:::o;84:27::-;;;;:::o;152:135::-;237:5;230:4;:12;;;;;;;267:13;252:12;:28;;;;;;;152:135;;:::o;557:59::-;605:4;594:8;;:15;;;;;;;;;;;;;;;;;;557:59::o;447:72:0:-;486:4;508;501:11;;447:72;:::o;117:28:9:-;;;;;;;;;;;;;:::o;98:26:0:-;;;;;;;;;;;;;:::o;294:189:9:-;333:13;348:21;371:14;404:4;;396:12;;434;;418:28;;468:8;;;;;;;;;;;456:20;;294:189;;;:::o;489:62::-;539:5;528:8;;:16;;;;;;;;;;;;;;;;;;489:62::o;526:299:0:-;644:12;630:11;;:26;;;;;;;;;;;;;;;;;;673:5;666:4;:12;;;;;;;703:13;688:12;:28;;;;;;;737:4;726:8;;:15;;;;;;;;;;;;;;;;;;757:61;775:5;782:12;796:4;802:10;814:3;757:61;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;526:299;;;:::o",
   "source": "pragma solidity ^0.4.24;\n\nimport \"./ParticipantData.sol\";\n\ncontract Bank is ParticipantData{\n\n    address public bankAccount;\n\n    event NewBankCreated(address theContractAddress, address theSenderAddress, uint timestamp);\n    event BankDataPopulated(bytes32 name, address theAccount, address theContractAddress, address theSenderAddress, uint timestamp);\n\n    constructor() public {\n        emit NewBankCreated(this, msg.sender, now);\n    }\n\n    function isBank() pure public returns (bool){\n        return true;\n    }\n\n\n    function populateBankData (address _bankAccount, bytes32 _name, bytes32 _localAddress) public {\n        bankAccount = _bankAccount;\n        name = _name;\n        localAddress = _localAddress;\n        isActive = true;\n\n        emit BankDataPopulated(_name, _bankAccount, this, msg.sender, now);\n    }\n\n\n}",
   "sourcePath": "/Users/iraeidelman/IdeaProjects/ira-blockchain/contracts/Bank.sol",
   "ast": {
@@ -245,7 +245,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 82,
-        "sourceUnit": 796,
+        "sourceUnit": 908,
         "src": "26:31:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -259,10 +259,10 @@
               "id": 3,
               "name": "ParticipantData",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 795,
+              "referencedDeclaration": 907,
               "src": "76:15:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ParticipantData_$795",
+                "typeIdentifier": "t_contract$_ParticipantData_$907",
                 "typeString": "contract ParticipantData"
               }
             },
@@ -272,7 +272,7 @@
           }
         ],
         "contractDependencies": [
-          795
+          907
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -280,7 +280,7 @@
         "id": 81,
         "linearizedBaseContracts": [
           81,
-          795
+          907
         ],
         "name": "Bank",
         "nodeType": "ContractDefinition",
@@ -573,7 +573,7 @@
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1025,
+                        "referencedDeclaration": 1137,
                         "src": "412:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Bank_$81",
@@ -588,7 +588,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1010,
+                          "referencedDeclaration": 1122,
                           "src": "418:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -615,7 +615,7 @@
                         "name": "now",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1012,
+                        "referencedDeclaration": 1124,
                         "src": "430:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -848,7 +848,7 @@
                       "name": "name",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 735,
+                      "referencedDeclaration": 847,
                       "src": "666:4:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -894,7 +894,7 @@
                       "name": "localAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 737,
+                      "referencedDeclaration": 849,
                       "src": "688:12:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -940,7 +940,7 @@
                       "name": "isActive",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 740,
+                      "referencedDeclaration": 852,
                       "src": "726:8:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -1013,7 +1013,7 @@
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1025,
+                        "referencedDeclaration": 1137,
                         "src": "796:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Bank_$81",
@@ -1028,7 +1028,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1010,
+                          "referencedDeclaration": 1122,
                           "src": "802:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1055,7 +1055,7 @@
                         "name": "now",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1012,
+                        "referencedDeclaration": 1124,
                         "src": "814:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1257,7 +1257,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 82,
-        "sourceUnit": 796,
+        "sourceUnit": 908,
         "src": "26:31:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1271,10 +1271,10 @@
               "id": 3,
               "name": "ParticipantData",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 795,
+              "referencedDeclaration": 907,
               "src": "76:15:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ParticipantData_$795",
+                "typeIdentifier": "t_contract$_ParticipantData_$907",
                 "typeString": "contract ParticipantData"
               }
             },
@@ -1284,7 +1284,7 @@
           }
         ],
         "contractDependencies": [
-          795
+          907
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -1292,7 +1292,7 @@
         "id": 81,
         "linearizedBaseContracts": [
           81,
-          795
+          907
         ],
         "name": "Bank",
         "nodeType": "ContractDefinition",
@@ -1585,7 +1585,7 @@
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1025,
+                        "referencedDeclaration": 1137,
                         "src": "412:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Bank_$81",
@@ -1600,7 +1600,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1010,
+                          "referencedDeclaration": 1122,
                           "src": "418:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1627,7 +1627,7 @@
                         "name": "now",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1012,
+                        "referencedDeclaration": 1124,
                         "src": "430:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1860,7 +1860,7 @@
                       "name": "name",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 735,
+                      "referencedDeclaration": 847,
                       "src": "666:4:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -1906,7 +1906,7 @@
                       "name": "localAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 737,
+                      "referencedDeclaration": 849,
                       "src": "688:12:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -1952,7 +1952,7 @@
                       "name": "isActive",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 740,
+                      "referencedDeclaration": 852,
                       "src": "726:8:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -2025,7 +2025,7 @@
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1025,
+                        "referencedDeclaration": 1137,
                         "src": "796:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Bank_$81",
@@ -2040,7 +2040,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1010,
+                          "referencedDeclaration": 1122,
                           "src": "802:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2067,7 +2067,7 @@
                         "name": "now",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1012,
+                        "referencedDeclaration": 1124,
                         "src": "814:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2248,5 +2248,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-14T10:53:12.776Z"
+  "updatedAt": "2018-06-18T10:36:53.041Z"
 }

@@ -200,8 +200,8 @@
   ],
   "bytecode": "0x60806040526000600260006101000a81548160ff02191690831515021790555034801561002b57600080fd5b507fbe793d62f6a83b23ee9065d137323bb3b333efc5c2777898e55def621c6c5ef2303342604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828152602001935050505060405180910390a16104a2806100da6000396000f300608060405260043610610099576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde031461009e57806308db16cb146100d15780630d55748d146101045780630f15f4c01461014357806322f3e2d41461015a5780633bc5de30146101895780633caef4aa146101d657806351b42b001461023557806371c3418e1461024c575b600080fd5b3480156100aa57600080fd5b506100b361027b565b60405180826000191660001916815260200191505060405180910390f35b3480156100dd57600080fd5b506100e6610281565b60405180826000191660001916815260200191505060405180910390f35b34801561011057600080fd5b5061014160048036038101908080356000191690602001909291908035600019169060200190929190505050610287565b005b34801561014f57600080fd5b506101586102a1565b005b34801561016657600080fd5b5061016f6102be565b604051808215151515815260200191505060405180910390f35b34801561019557600080fd5b5061019e6102d1565b604051808460001916600019168152602001836000191660001916815260200182151515158152602001935050505060405180910390f35b3480156101e257600080fd5b50610233600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803560001916906020019092919080356000191690602001909291905050506102f6565b005b34801561024157600080fd5b5061024a610450565b005b34801561025857600080fd5b5061026161046d565b604051808215151515815260200191505060405180910390f35b60005481565b60015481565b816000816000191690555080600181600019169055505050565b6001600260006101000a81548160ff021916908315150217905550565b600260009054906101000a900460ff1681565b6000806000805492506001549150600260009054906101000a900460ff169050909192565b82600260016101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550816000816000191690555080600181600019169055506001600260006101000a81548160ff0219169083151502179055507f74040ff263b8f30e5b30fef028fe4bde9a5e28df244ac914a6f5fff0d510d52082843033426040518086600019166000191681526020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019550505050505060405180910390a1505050565b6000600260006101000a81548160ff021916908315150217905550565b600060019050905600a165627a7a72305820221f2bf963cb0c8713cd8fa9fb95658750f30dcbb259d93a75fdde2a7262d2760029",
   "deployedBytecode": "0x608060405260043610610099576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde031461009e57806308db16cb146100d15780630d55748d146101045780630f15f4c01461014357806322f3e2d41461015a5780633bc5de30146101895780633caef4aa146101d657806351b42b001461023557806371c3418e1461024c575b600080fd5b3480156100aa57600080fd5b506100b361027b565b60405180826000191660001916815260200191505060405180910390f35b3480156100dd57600080fd5b506100e6610281565b60405180826000191660001916815260200191505060405180910390f35b34801561011057600080fd5b5061014160048036038101908080356000191690602001909291908035600019169060200190929190505050610287565b005b34801561014f57600080fd5b506101586102a1565b005b34801561016657600080fd5b5061016f6102be565b604051808215151515815260200191505060405180910390f35b34801561019557600080fd5b5061019e6102d1565b604051808460001916600019168152602001836000191660001916815260200182151515158152602001935050505060405180910390f35b3480156101e257600080fd5b50610233600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803560001916906020019092919080356000191690602001909291905050506102f6565b005b34801561024157600080fd5b5061024a610450565b005b34801561025857600080fd5b5061026161046d565b604051808215151515815260200191505060405180910390f35b60005481565b60015481565b816000816000191690555080600181600019169055505050565b6001600260006101000a81548160ff021916908315150217905550565b600260009054906101000a900460ff1681565b6000806000805492506001549150600260009054906101000a900460ff169050909192565b82600260016101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550816000816000191690555080600181600019169055506001600260006101000a81548160ff0219169083151502179055507f74040ff263b8f30e5b30fef028fe4bde9a5e28df244ac914a6f5fff0d510d52082843033426040518086600019166000191681526020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019550505050505060405180910390a1505050565b6000600260006101000a81548160ff021916908315150217905550565b600060019050905600a165627a7a72305820221f2bf963cb0c8713cd8fa9fb95658750f30dcbb259d93a75fdde2a7262d2760029",
-  "sourceMap": "60:814:2:-;;;140:5:8;117:28;;;;;;;;;;;;;;;;;;;;455:84:2;8:9:-1;5:2;;;30:1;27;20:12;5:2;455:84:2;491:41;510:4;516:10;528:3;491:41;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;60:814;;;;;;",
-  "deployedSourceMap": "60:814:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;59:19:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:19:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;84:27;;8:9:-1;5:2;;;30:1;27;20:12;5:2;84:27:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;152:135;;8:9:-1;5:2;;;30:1;27;20:12;5:2;152:135:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;557:59;;8:9:-1;5:2;;;30:1;27;20:12;5:2;557:59:8;;;;;;117:28;;8:9:-1;5:2;;;30:1;27;20:12;5:2;117:28:8;;;;;;;;;;;;;;;;;;;;;;;;;;;294:189;;8:9:-1;5:2;;;30:1;27;20:12;5:2;294:189:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;547:323:2;;8:9:-1;5:2;;;30:1;27;20:12;5:2;547:323:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;489:62:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;489:62:8;;;;;;373:76:2;;8:9:-1;5:2;;;30:1;27;20:12;5:2;373:76:2;;;;;;;;;;;;;;;;;;;;;;;;;;;59:19:8;;;;:::o;84:27::-;;;;:::o;152:135::-;237:5;230:4;:12;;;;;;;267:13;252:12;:28;;;;;;;152:135;;:::o;557:59::-;605:4;594:8;;:15;;;;;;;;;;;;;;;;;;557:59::o;117:28::-;;;;;;;;;;;;;:::o;294:189::-;333:13;348:21;371:14;404:4;;396:12;;434;;418:28;;468:8;;;;;;;;;;;456:20;;294:189;;;:::o;547:323:2:-;677:16;659:15;;:34;;;;;;;;;;;;;;;;;;710:5;703:4;:12;;;;;;;740:13;725:12;:28;;;;;;;774:4;763:8;;:15;;;;;;;;;;;;;;;;;;794:69;816:5;823:16;841:4;847:10;859:3;794:69;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;547:323;;;:::o;489:62:8:-;539:5;528:8;;:16;;;;;;;;;;;;;;;;;;489:62::o;373:76:2:-;416:4;438;431:11;;373:76;:::o",
+  "sourceMap": "60:814:2:-;;;140:5:9;117:28;;;;;;;;;;;;;;;;;;;;455:84:2;8:9:-1;5:2;;;30:1;27;20:12;5:2;455:84:2;491:41;510:4;516:10;528:3;491:41;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;60:814;;;;;;",
+  "deployedSourceMap": "60:814:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;59:19:9;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:19:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;84:27;;8:9:-1;5:2;;;30:1;27;20:12;5:2;84:27:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;152:135;;8:9:-1;5:2;;;30:1;27;20:12;5:2;152:135:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;557:59;;8:9:-1;5:2;;;30:1;27;20:12;5:2;557:59:9;;;;;;117:28;;8:9:-1;5:2;;;30:1;27;20:12;5:2;117:28:9;;;;;;;;;;;;;;;;;;;;;;;;;;;294:189;;8:9:-1;5:2;;;30:1;27;20:12;5:2;294:189:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;547:323:2;;8:9:-1;5:2;;;30:1;27;20:12;5:2;547:323:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;489:62:9;;8:9:-1;5:2;;;30:1;27;20:12;5:2;489:62:9;;;;;;373:76:2;;8:9:-1;5:2;;;30:1;27;20:12;5:2;373:76:2;;;;;;;;;;;;;;;;;;;;;;;;;;;59:19:9;;;;:::o;84:27::-;;;;:::o;152:135::-;237:5;230:4;:12;;;;;;;267:13;252:12;:28;;;;;;;152:135;;:::o;557:59::-;605:4;594:8;;:15;;;;;;;;;;;;;;;;;;557:59::o;117:28::-;;;;;;;;;;;;;:::o;294:189::-;333:13;348:21;371:14;404:4;;396:12;;434;;418:28;;468:8;;;;;;;;;;;456:20;;294:189;;;:::o;547:323:2:-;677:16;659:15;;:34;;;;;;;;;;;;;;;;;;710:5;703:4;:12;;;;;;;740:13;725:12;:28;;;;;;;774:4;763:8;;:15;;;;;;;;;;;;;;;;;;794:69;816:5;823:16;841:4;847:10;859:3;794:69;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;547:323;;;:::o;489:62:9:-;539:5;528:8;;:16;;;;;;;;;;;;;;;;;;489:62::o;373:76:2:-;416:4;438;431:11;;373:76;:::o",
   "source": "pragma solidity ^0.4.24;\n\nimport \"./ParticipantData.sol\";\n\n\ncontract Customer is ParticipantData {\n\n\n    address customerAccount;\n\n    event NewCustomerCreated(address theContractAddress, address theSenderAddress, uint timestamp);\n    event CustomerDataPopulated(bytes32 name, address theAccount, address theContractAddress, address theSenderAddress, uint timestamp);\n\n    function isCustomer() pure public returns (bool){\n        return true;\n    }\n\n    constructor() public {\n        emit NewCustomerCreated(this, msg.sender, now);\n    }\n\n\n\n    function populateCustomerData (address _customerAccount, bytes32 _name, bytes32 _localAddress) public {\n        customerAccount = _customerAccount;\n        name = _name;\n        localAddress = _localAddress;\n        isActive = true;\n\n        emit CustomerDataPopulated(_name, _customerAccount, this, msg.sender, now);\n    }\n\n\n}\n",
   "sourcePath": "/Users/iraeidelman/IdeaProjects/ira-blockchain/contracts/Customer.sol",
   "ast": {
@@ -231,7 +231,7 @@
         "id": 274,
         "nodeType": "ImportDirective",
         "scope": 354,
-        "sourceUnit": 796,
+        "sourceUnit": 908,
         "src": "26:31:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -245,10 +245,10 @@
               "id": 275,
               "name": "ParticipantData",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 795,
+              "referencedDeclaration": 907,
               "src": "81:15:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ParticipantData_$795",
+                "typeIdentifier": "t_contract$_ParticipantData_$907",
                 "typeString": "contract ParticipantData"
               }
             },
@@ -258,7 +258,7 @@
           }
         ],
         "contractDependencies": [
-          795
+          907
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -266,7 +266,7 @@
         "id": 353,
         "linearizedBaseContracts": [
           353,
-          795
+          907
         ],
         "name": "Customer",
         "nodeType": "ContractDefinition",
@@ -645,7 +645,7 @@
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1029,
+                        "referencedDeclaration": 1141,
                         "src": "510:4:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Customer_$353",
@@ -660,7 +660,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1010,
+                          "referencedDeclaration": 1122,
                           "src": "516:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -687,7 +687,7 @@
                         "name": "now",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1012,
+                        "referencedDeclaration": 1124,
                         "src": "528:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -834,7 +834,7 @@
                       "name": "name",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 735,
+                      "referencedDeclaration": 847,
                       "src": "703:4:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -880,7 +880,7 @@
                       "name": "localAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 737,
+                      "referencedDeclaration": 849,
                       "src": "725:12:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -926,7 +926,7 @@
                       "name": "isActive",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 740,
+                      "referencedDeclaration": 852,
                       "src": "763:8:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -999,7 +999,7 @@
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1029,
+                        "referencedDeclaration": 1141,
                         "src": "841:4:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Customer_$353",
@@ -1014,7 +1014,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1010,
+                          "referencedDeclaration": 1122,
                           "src": "847:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1041,7 +1041,7 @@
                         "name": "now",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1012,
+                        "referencedDeclaration": 1124,
                         "src": "859:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1243,7 +1243,7 @@
         "id": 274,
         "nodeType": "ImportDirective",
         "scope": 354,
-        "sourceUnit": 796,
+        "sourceUnit": 908,
         "src": "26:31:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1257,10 +1257,10 @@
               "id": 275,
               "name": "ParticipantData",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 795,
+              "referencedDeclaration": 907,
               "src": "81:15:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ParticipantData_$795",
+                "typeIdentifier": "t_contract$_ParticipantData_$907",
                 "typeString": "contract ParticipantData"
               }
             },
@@ -1270,7 +1270,7 @@
           }
         ],
         "contractDependencies": [
-          795
+          907
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -1278,7 +1278,7 @@
         "id": 353,
         "linearizedBaseContracts": [
           353,
-          795
+          907
         ],
         "name": "Customer",
         "nodeType": "ContractDefinition",
@@ -1657,7 +1657,7 @@
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1029,
+                        "referencedDeclaration": 1141,
                         "src": "510:4:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Customer_$353",
@@ -1672,7 +1672,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1010,
+                          "referencedDeclaration": 1122,
                           "src": "516:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1699,7 +1699,7 @@
                         "name": "now",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1012,
+                        "referencedDeclaration": 1124,
                         "src": "528:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1846,7 +1846,7 @@
                       "name": "name",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 735,
+                      "referencedDeclaration": 847,
                       "src": "703:4:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -1892,7 +1892,7 @@
                       "name": "localAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 737,
+                      "referencedDeclaration": 849,
                       "src": "725:12:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -1938,7 +1938,7 @@
                       "name": "isActive",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 740,
+                      "referencedDeclaration": 852,
                       "src": "763:8:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -2011,7 +2011,7 @@
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1029,
+                        "referencedDeclaration": 1141,
                         "src": "841:4:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_Customer_$353",
@@ -2026,7 +2026,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1010,
+                          "referencedDeclaration": 1122,
                           "src": "847:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2053,7 +2053,7 @@
                         "name": "now",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1012,
+                        "referencedDeclaration": 1124,
                         "src": "859:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2234,5 +2234,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-14T10:53:12.777Z"
+  "updatedAt": "2018-06-18T10:36:53.042Z"
 }

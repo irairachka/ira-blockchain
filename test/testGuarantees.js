@@ -52,6 +52,7 @@ var RoleUtils = artifacts.require("./RoleUtils.sol");
 var Bank = artifacts.require("./Bank.sol");
 var Customer = artifacts.require("./Customer.sol");
 var Municipality = artifacts.require("./Municipality.sol");
+var EnvironmentUtils = artifacts.require("./EnvironmentUtils.sol");
 
 var sha3_512 = require('js-sha3').sha3_512;
 
@@ -67,12 +68,13 @@ contract("FirstGuarantee", function(accounts) {
 
         var globalFirstGuarantee;
         var newFirstGuarantee;
+        var environmentUtils;
 
         return FirstGuarantee.deployed().then(function(instance) {
             globalFirstGuarantee = instance;
             console.log("Global Events - first execution:");
 
-            return getGuaranteeHistoryEvents(globalFirstGuarantee);
+            return getContractHistoryEvents(globalFirstGuarantee);
 
         }).then(function () {
 
@@ -107,18 +109,25 @@ contract("FirstGuarantee", function(accounts) {
 
             newFirstGuarantee = newContractInstance;
 
-            var bankHapoalim = Bank.at('0xf17f52151ebef6c7334fad080c5704d77216b732');
+            return EnvironmentUtils.deployed();
+
+        }).then(function (_environmentUtils) {
+            environmentUtils = _environmentUtils;
+            console.log("environmentUtils: " + environmentUtils.address);
+
+            return environmentUtils.getBankByAccount(0xf17f52151ebef6c7334fad080c5704d77216b732);
+
+        }).then(function () {
+
+            return getContractHistoryEvents(environmentUtils);
+
+        }).then(function (bankHapoalim) {
+
+            console.log("bankHapoalim: " + bankHapoalim.address);
+
             var customer = Customer.at('0xc5fdf4076b8f3a5357c5e395ab970b5b54098fef');
             var municipality = Municipality.at('0x821aea9a577a9b44299b9c15c88cf3087f3b5544');
             var pdfHash = sha3_512("this is a pdf file content");
-
-            console.log("bankHapoalim: " + bankHapoalim.address);
-            console.log("customer: " + customer.address);
-            console.log("municipality: " + municipality.address);
-            console.log("pdfHash: " + pdfHash);
-            console.log("newContractInstance: " + newFirstGuarantee.address);
-
-            //FirstGuarantee newfirstGuarantee = newContractInstance;
 
             return newFirstGuarantee.populateGuaranteeData.sendTransaction(municipality.address, bankHapoalim.address, customer.address, pdfHash);
         }).then(function () {
@@ -131,7 +140,7 @@ contract("FirstGuarantee", function(accounts) {
             return recalled_FirstGuarantee.bank.call();
             //return newFirstGuarantee.bank.call();
 
-            return getGuaranteeHistoryEvents(recalled_FirstGuarantee);
+            return getContractHistoryEvents(recalled_FirstGuarantee);
         }).then(function (bank) {
             console.log("bank in the new guarantee: " + bank.address);
 
@@ -141,7 +150,7 @@ contract("FirstGuarantee", function(accounts) {
 
         }).then(function (secondGlobalFirstGuarantee){
 
-            return getGuaranteeHistoryEvents(secondGlobalFirstGuarantee);
+            return getContractHistoryEvents(secondGlobalFirstGuarantee);
         }).then(function (replay) {
             logBlockchainStatusAfterGaranteeCreation();
 
@@ -153,15 +162,15 @@ contract("FirstGuarantee", function(accounts) {
 
 
 
-    getGuaranteeHistoryEvents = (theRelevantGuarantee) => {
+    getContractHistoryEvents = (theRelevantContract) => {
 
         return new Promise((resolve) => {
 
-            var guarantyEventsArray = [];
-            var guaranteeAddress = theRelevantGuarantee.address;
-            var allGuaranteeEvents = theRelevantGuarantee.allEvents({fromBlock: 0, toBlock: 'latest'});
+            var contractEventsArray = [];
+            var contractAddress = theRelevantContract.address;
+            var allContractEvents = theRelevantContract.allEvents({fromBlock: 0, toBlock: 'latest'});
 
-            return allGuaranteeEvents.get(function (error, result) {
+            return allContractEvents.get(function (error, result) {
 
                 console.log("events array length: " + result.length);
 
@@ -170,13 +179,13 @@ contract("FirstGuarantee", function(accounts) {
 
                     console.log("event [" + i + "] name: " + cur_result.event);
 
-                    guarantyEventsArray.push(populateHistoryLineData(cur_result.event, cur_result.args));
+                    contractEventsArray.push(populateHistoryLineData(cur_result.event, cur_result.args));
                 }
 
                 var replay =
                     {
-                        shortguarantee: guaranteeAddress,
-                        log: guarantyEventsArray
+                        shortguarantee: contractAddress,
+                        log: contractEventsArray
                     };
 
                 resolve(replay);
