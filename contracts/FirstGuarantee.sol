@@ -7,7 +7,7 @@ contract FirstGuarantee is BaseGuaranteeData {
 
 
     event FirstGuaranteeCreated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
-    event FirstGuaranteePopulated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
+    event FirstGuaranteeDataPopulated(string theMessage, address theContractAddress, address theSenderAddress, uint timestamp);
 
     function getId() public constant returns (address _contract_id){
         return this;
@@ -23,7 +23,7 @@ contract FirstGuarantee is BaseGuaranteeData {
     function populateGuaranteeData(address _municipality, address _bank, address _customer, bytes _guaranteeDocumentHash) onlyAdmin public {
         populateBaseGuaranteeData(_municipality, _bank, _customer, _guaranteeDocumentHash);
 
-        emit FirstGuaranteePopulated("FirstGuaranty data populated", this, msg.sender, now);
+        emit FirstGuaranteeDataPopulated("FirstGuaranty data populated", this, msg.sender, now);
     }
 
 }

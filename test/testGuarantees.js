@@ -56,7 +56,6 @@ var EnvironmentUtils = artifacts.require("./EnvironmentUtils.sol");
 
 var sha3_512 = require('js-sha3').sha3_512;
 
-//const SHA3 = require('sha3');
 
 contract("FirstGuarantee", function(accounts) {
     var first_account = accounts[0];
@@ -69,11 +68,13 @@ contract("FirstGuarantee", function(accounts) {
         var globalFirstGuarantee;
         var newFirstGuarantee;
         var environmentUtils;
-        var bankHapoalim;
+        var bankHapoalimAddress;
+        var customerAddress;
 
         return FirstGuarantee.deployed().then(function(instance) {
             globalFirstGuarantee = instance;
-            console.log("Global Events - first execution:");
+
+            console.log("Print Global Events ---> first execution:");
 
             return getContractHistoryEvents(globalFirstGuarantee);
 
@@ -83,6 +84,7 @@ contract("FirstGuarantee", function(accounts) {
 
         }).then(function (ownerAddress) {
             account = ownerAddress;
+
             console.log("ownerAddress: "+ ownerAddress);
 
             return globalFirstGuarantee.roleUtils.call();
@@ -94,6 +96,7 @@ contract("FirstGuarantee", function(accounts) {
             return globalFirstGuarantee.getId.call();
 
         }).then(function (guaranteeAddress) {
+
             console.log("guaranteeAddress: " + guaranteeAddress);
 
             return RoleUtils.deployed();
@@ -102,25 +105,39 @@ contract("FirstGuarantee", function(accounts) {
 
             console.log("roleUtilsAddress: " + roleUtilsInstance.address);
 
-            //return FirstGuarantee.new(constructorParam1] [, constructorParam2], {from: first_account});
             return FirstGuarantee.new(roleUtilsInstance.address, {from: first_account});
+
         }).then(function (newContractInstance){
+
             console.log("New guarantee CREATED !!!");
-            console.log("New guarantee specific Events - first execution:");
+            console.log("New guarantee specific Events ---> first execution:");
 
             newFirstGuarantee = newContractInstance;
 
             return EnvironmentUtils.deployed();
 
         }).then(function (_environmentUtils) {
+
             environmentUtils = _environmentUtils;
+
             console.log("environmentUtils: " + environmentUtils.address);
 
             return environmentUtils.getBankByAccount.call('0xf17f52151ebef6c7334fad080c5704d77216b732');
 
-        }).then(function (_bankHapoalim) {
-            bankHapoalim = _bankHapoalim;
-            console.log("bankHapoalim: " + bankHapoalim);
+        }).then(function (_bankHapoalimAddress) {
+            bankHapoalimAddress = _bankHapoalimAddress;
+
+            console.log("EnvironmentUtils: bankHapoalim address: " + bankHapoalimAddress);
+
+
+            return environmentUtils.getCustomerByAccount.call('0xf17f52151ebef6c7334fad080c5704d77216b732');
+
+        }).then(function (_customerAddress) {
+            customerAddress = _customerAddress;
+
+            console.log("EnvironmentUtils: customer address: " + customerAddress);
+
+            console.log("EnvironmentUtils: specific Events");
 
             return getContractHistoryEvents(environmentUtils);
 
@@ -131,7 +148,7 @@ contract("FirstGuarantee", function(accounts) {
             var municipality = Municipality.at('0x821aea9a577a9b44299b9c15c88cf3087f3b5544');
             var pdfHash = sha3_512("this is a pdf file content");
 
-            return newFirstGuarantee.populateGuaranteeData.sendTransaction(municipality.address, bankHapoalim, customer.address, pdfHash);
+            return newFirstGuarantee.populateGuaranteeData.sendTransaction(municipality.address, bankHapoalimAddress, customer.address, pdfHash);
         }).then(function () {
 
             console.log("Guarantee data is populated !!!!!!");
@@ -140,11 +157,10 @@ contract("FirstGuarantee", function(accounts) {
             var recalled_FirstGuarantee = FirstGuarantee.at(newFirstGuarantee.address);
 
             return recalled_FirstGuarantee.bank.call();
-            //return newFirstGuarantee.bank.call();
 
             return getContractHistoryEvents(recalled_FirstGuarantee);
         }).then(function (bank) {
-            console.log("bank in the new guarantee: " + bank.address);
+            console.log("bank in the new guarantee: " + bank);
 
             console.log("Global Events - second execution:");
 
